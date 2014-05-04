@@ -1,4 +1,4 @@
-call pathogen#infect()
+execute pathogen#infect()
 
 " No-brainer options
 filetype plugin indent on
