@@ -10,6 +10,8 @@ fi
 
 # User specific aliases and functions
 source /usr/share/git-core/contrib/completion/git-prompt.sh
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
 export PS1='[\h \A $(if [ $? -eq 0 ]; then echo "✓"; else echo "✗"; fi) \w$(__git_ps1 " (%s)")]\$ '
 export GPG_TTY=$(tty)
 export GOPATH=$HOME/Source/go

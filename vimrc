@@ -25,5 +25,5 @@ set background=dark
 "set autoindent
 
 " Go settings
-set rtp+=$GOROOT/misc/vim
+set rtp+=/usr/lib/golang/misc/vim
 au BufRead,BufNewFile *.go set filetype=go
