@@ -9,10 +9,8 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-source /usr/share/git-core/contrib/completion/git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
-export PS1='[\h \A $(if [ $? -eq 0 ]; then echo "✓"; else echo "✗"; fi) \w$(__git_ps1 " (%s)")]\$ '
+source $HOME/.oh-my-git/prompt.sh
+export PS1='[\h \A $(if [ $? -eq 0 ]; then echo "✓"; else echo "✗"; fi) \w]\$ '
 export GPG_TTY=$(tty)
 export GOPATH="${HOME}/Sources/go"
 export PATH="${PATH}:${GOPATH}"
