@@ -9,7 +9,10 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+
+# https://github.com/arialdomartini/oh-my-git
 source $HOME/.oh-my-git/prompt.sh
+
 export PS1='[\h \A $(if [ $? -eq 0 ]; then echo "✓"; else echo "✗"; fi) \w]\$ '
 export GPG_TTY=$(tty)
 export GOPATH="${HOME}/Sources/go"
